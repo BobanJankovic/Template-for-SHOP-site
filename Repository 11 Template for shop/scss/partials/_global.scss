@@ -1,0 +1,27 @@
+body {
+    font-family: 'Istok Web', sans-serif;
+    background-color: $bkg-color;
+    color: $main-color;
+    font-size:16px;
+    
+} 
+
+
+
+a, a:hover, a:visited, a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+a {
+    color: $link-color;
+
+}
+a:hover {
+    color: $link-hover;
+
+}
+
+ .skloni {
+     width: 100%;
+ }

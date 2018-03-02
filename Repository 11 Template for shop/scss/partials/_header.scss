@@ -1,0 +1,140 @@
+.main-header {
+    .top-bar {
+        background-color:  #e6e6ff;
+        border-bottom: 3px solid black;
+        a {
+            font-family: 'Oswald', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color:$main-color;
+            @media (min-width: 992px) {
+                font-size: 16px;
+            }
+        }
+        .broj {
+            float: left;
+            padding-left: 20px;
+        }
+        .login {
+            float: right;
+            padding-right: 20px;
+        }
+    }
+    .nav-bar {
+        background-color: white;
+        .container {
+            position: relative;
+            nav {
+                padding-bottom: 20px;
+                padding-top: 20px;
+                img {
+                    width: 60px;
+                    height: 20px;
+                    @media (min-width: 992px) {
+                        width: 86px;
+                        height: 28px;
+                        position: relative;
+                        top: 43px;
+                    }
+                   
+                }
+                button {
+                    border: none;
+                    margin-right: 10px;
+                    margin-left: 10px;
+                    padding: 0;
+                    span {
+                        padding: 0;
+                        margin: 0;
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+                .collapse {
+                    ul {
+                        li {
+                            transition: all .8;
+                            &:not(:last-child) {
+                                margin-right: 15px;
+                            }
+                            @media (min-width: 992px) {
+                                &:hover,
+                            &:active {
+                                color: $main-color;
+                                border-bottom: 1px solid silver;
+                                box-shadow: 0 1rem 2rem rgba($link-hover, .4);
+                                transform: rotate(5deg) scale(1.3);
+                            }
+                        }
+                            
+                            }
+                            a {
+                                text-transform: uppercase;
+                                font-family: 'Montserrat', sans-serif;
+                                font-weight: 600;
+                            }
+                            @media (min-width: 1200px) {
+                                padding-right: 215px;
+                            }
+                           
+                    }
+                    @media (min-width: 992px) {
+                        margin-top: 15px;
+                    }
+                    
+                    
+                }
+                
+            }
+            .search-cart-holder {
+                width: 160px;
+                height: 20px;
+                display: inline-flex;
+                position: absolute;
+                top: 25px;
+                right: 25px;
+                input {
+                    margin-right: 5px;
+                    border: none;
+                    outline: transparent;
+                    border-bottom: 1px solid $link-color;
+                    border-radius: 0;
+                    background-color: transparent;
+                }
+                input:focus {
+                    border-bottom: 2px solid $main-color;
+                }
+                button {
+                    position: absolute;
+                    top: -7px;
+                    right: 19px;
+                    border: none;
+                    background-color: transparent;
+                    .lupa {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+                a {
+                    span {
+                        font-size: 12px;
+                        justify-content: center;
+                        align-items: center;
+                        display: inline-flex;
+                        padding: 0px 5px;
+                        position: absolute;
+                        top: 15px;
+                        right: -5px;
+                        border-radius: 100%;
+                        background-color: red;
+                        color: black;
+                    }
+                }
+                @media (min-width: 1200px) {
+                    top:68px;
+                }
+            }
+        }
+    }
+}

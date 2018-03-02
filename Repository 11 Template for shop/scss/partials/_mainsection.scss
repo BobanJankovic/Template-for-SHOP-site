@@ -1,0 +1,369 @@
+main {
+    .intro-header {
+        position: relative;
+        img {
+            width: 100%;
+            height: 420px;
+            @media (min-width: 768px) {
+                display: none;
+                height: 420px;
+            }
+            @media (min-width: 1200px) {
+                
+                height: 520px;
+            }
+        }
+        #intro-slider {
+            display: none;
+            @media (min-width: 768px) {
+                display: block;
+                height: 420px;
+            }
+            @media (min-width: 1200px) {
+                
+                height: 520px;
+            }
+        }
+        h2 {
+            padding-top: 15px;
+            position: relative;
+            width: 80vw;
+            font-weight: 900;
+            text-align: center;
+            @include center;
+            text-transform: uppercase;
+            font-family: 'Montserrat', sans-serif;
+            color: #DAA520;
+            font-size: 40px;
+            span {
+                font-size: 20px;
+                color: white;
+                font-weight: 500;
+            }
+            @media (min-width: 768px) {
+                background-color: rgba(16, 17, 14, 0.7);
+                width: 600px;
+                height: 134px;
+            }
+            &::after,
+            &::before {
+                content: " ";
+                display: block;
+                width: 70px;
+                height: 30px;
+                @media (max-width: 768px) {
+                    display: none;
+                }
+            }
+            &::before {
+                position: absolute;
+                top: 12px;
+                left: 14px;
+                border-left: 2px solid white;
+                border-top: 2px solid white;
+            }
+            &::after {
+                position: absolute;
+                bottom: 12px;
+                right: 14px;
+                border-right: 2px solid white;
+                border-bottom: 2px solid white;
+            }
+        }
+    }
+    .container {
+        position: relative;
+        .products-section {
+            position: relative;
+            h2 {
+                text-transform: uppercase;
+                padding-top: 50px;
+            }
+            .tritacke {
+                position: relative;
+                left: 50%;
+                top: 5%;
+                transform: translateX(-50%);
+                width: 60px;
+                height: 30px;
+                background-color: $bkg-color;
+                .tacka {
+                    text-align: center;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 100px;
+                    background-color: black;
+                    display: inline-block;
+                }
+            }
+            hr {
+                margin-top: -19px;
+                background-color: black;
+                width: 56%;
+            }
+            text-align: center;
+            font-family: 'Montserrat',
+            sans-serif;
+            .collections-holder {
+                position: relative;
+                text-align: center;
+                a {
+                    position: relative;
+                    img {
+                        border: 3px solid white;
+                    }
+                }
+                .female {
+                    position: relative;
+                    .zenska {
+                        background-color: rgba(16, 17, 14, 0.7);
+                        border: 1px solid black;
+                        @include center;
+                        padding-top: 0;
+                        text-transform: uppercase;
+                        text-align: center;
+                        font-size: 25px;
+                        color: white;
+                        &::after,
+                        &::before {
+                            content: " ";
+                            display: block;
+                            width: 70px;
+                            height: 30px;
+                            transition: all 1s;
+                            @media (max-width: 768px) {
+                                display: none;
+                            }
+                        }
+                        &::before {
+                            position: absolute;
+                            top: 5px;
+                            left: 7px;
+                            border-left: 2px solid white;
+                            border-top: 2px solid white;
+                        }
+                        &::after {
+                            position: absolute;
+                            bottom: 5px;
+                            right: 7px;
+                            border-right: 2px solid white;
+                            border-bottom: 2px solid white;
+                        }
+                        @media (min-width: 768px) {
+                            padding-top: 7.5%;
+                            width: 74%;
+                            height: 58%;
+                            font-size: 35px;
+                        }
+                        @media (min-width: 992px) {
+                            padding-top: 8%;
+                            width: 74%;
+                            height: 58%;
+                            font-size: 20px;
+                        }
+                        &:hover {
+                            &::before {
+                                position: absolute;
+                                top: 25px;
+                                left: 27px;
+                                border-left: 2px solid gold;
+                                border-top: 2px solid gold;
+                            }
+                            &::after {
+                                position: absolute;
+                                bottom: 25px;
+                                right: 27px;
+                                border-right: 2px solid gold;
+                                border-bottom: 2px solid gold;
+                            }
+                        }
+                    }
+                }
+                .male {
+                    position: relative;
+                    .muska {
+                        background-color: rgba(16, 17, 14, 0.7);
+                        border: 1px solid black;
+                        @include center;
+                        padding-top: 0;
+                        text-transform: uppercase;
+                        text-align: center;
+                        font-size: 25px;
+                        color: white;
+                        &::after,
+                        &::before {
+                            content: " ";
+                            display: block;
+                            width: 70px;
+                            height: 30px;
+                            transition: all 1s;
+                            @media (max-width: 768px) {
+                                display: none;
+                            }
+                        }
+                        &::before {
+                            position: absolute;
+                            top: 5px;
+                            left: 7px;
+                            border-left: 2px solid white;
+                            border-top: 2px solid white;
+                        }
+                        &::after {
+                            position: absolute;
+                            bottom: 5px;
+                            right: 7px;
+                            border-right: 2px solid white;
+                            border-bottom: 2px solid white;
+                        }
+                        @media (min-width: 768px) {
+                            padding-top: 7.5%;
+                            width: 74%;
+                            height: 58%;
+                            font-size: 35px;
+                        }
+                        @media (min-width: 992px) {
+                            padding-top: 8%;
+                            width: 74%;
+                            height: 58%;
+                            font-size: 20px;
+                        }
+                        &:hover {
+                            &::before {
+                                position: absolute;
+                                top: 25px;
+                                left: 27px;
+                                border-left: 2px solid gold;
+                                border-top: 2px solid gold;
+                            }
+                            &::after {
+                                position: absolute;
+                                bottom: 25px;
+                                right: 27px;
+                                border-right: 2px solid gold;
+                                border-bottom: 2px solid gold;
+                            }
+                        }
+                    }
+                }
+            }
+            .products-holder {
+                ul {
+                    list-style: none;
+                    position: relative;
+                    left: -23px;
+                    li {
+                        display: inline-block;
+                        transition: all 1s;
+                        &:hover,
+                        &:active {
+                            color: $main-color;
+                            border-bottom: 1px solid silver;
+                            box-shadow: 0 1rem 2rem rgba($link-hover, .4);
+                            transform: rotate(5deg) scale(1.3);
+                        }
+                        a {
+                            font-family: 'Montserrat', sans-serif;
+                            text-transform: uppercase;
+                            color: black;
+                            font-weight: 600;
+                            font-size: 11px;
+                            @media (min-width: 768px) {
+                                font-size: 16px;
+                            }
+                        }
+                        &:not(:last-child) {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+                .row {
+                    [class^="col-"] {
+                        .product {
+                            .product-img-holder {
+                                overflow: hidden;
+                                position: relative;
+                                transition: all 1s;
+                                .oko {
+                                    position: absolute;
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    padding: 0;
+                                    background-color: rgba(18, 113, 222, 0.68);
+                                    left: 0;
+                                    bottom: -40px;
+                                    height: 40px;
+                                    margin: 0;
+                                    transition: all 1s;
+                                    li {
+                                        &:not(:last-child) {
+                                            margin-right: 17px;
+                                        }
+                                    }
+                                }
+                                &:hover {
+                                    -ms-transform: scale(1.03, 1.03);
+                                    /* IE 9 */
+                                    -webkit-transform: scale(1.03, 1.03);
+                                    /* Safari */
+                                    transform: scale(1.03, 1.03);
+                                    a {
+                                        opacity: 0.6;
+                                    }
+                                    .oko {
+                                        bottom: 0;
+                                    }
+                                }
+                            }
+                            .product-tittle {
+                                text-align: left;
+                                padding-top: 14px;
+                                h3 {
+                                    display: inline-block;
+                                    width: 120px;
+                                    font-size: 15px;
+                                    padding: 0;
+                                    margin: 0;
+                                    text-align: left;
+                                    span {
+                                        display: block;
+                                    }
+                                }
+                                .trisoma {
+                                    float: right;
+                                }
+                            }
+                            .color-picker {
+                                text-align: left;
+                                left: 0;
+                                padding: 0;
+                                .purple {
+                                    width: 10px;
+                                    height: 10px;
+                                    margin: 0;
+                                    padding: 0;
+                                    background-color: purple;
+                                }
+                                .green {
+                                    width: 10px;
+                                    height: 10px;
+                                    margin: 0;
+                                    padding: 0;
+                                    background-color: green;
+                                }
+                                .gray {
+                                    width: 10px;
+                                    height: 10px;
+                                    margin: 0;
+                                    padding: 0;
+                                    background-color: gray;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
